@@ -1,0 +1,39 @@
+{
+	"folders": [
+		{
+			"path": ".",
+		}
+	],
+	"settings": {
+		"doxdocgen.file.fileOrder": [
+			"file",
+			"author",
+			"brief",
+			"version",
+			"date"
+		],
+		"todo-tree.highlights.defaultHighlight": {
+			"type": "text-and-comment"
+		},
+		"todo-tree.general.tags": [
+			"TODO",
+			"REVIEW",
+			"FIXME",
+			"REMOVE"
+		],
+		"todo-tree.highlights.customHighlight": {
+			"TODO":{
+					"icon": "check",
+					"iconColour": "green",
+					"foreground": "black",
+					"background": "green"
+			},
+			"REVIEW":{
+					"icon": "eye",
+					"iconColour": "#0393f3",
+					"foreground": "black",
+					"background": "#0393f3"
+			}
+		}		
+	}
+}
