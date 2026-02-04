@@ -8,12 +8,14 @@ def get_modulous_and_generator():
     while True:
         q = miller_rabin.generate_prime(1024)
         p = 2*q + 1
-
+        print('q found!')
         if miller_rabin.miller_rabin(p):
-            g = secrets.randbelow(p-3) + 2
+            print('p found!')
+            while True:
+                g = secrets.randbelow(p-3) + 2
 
-            if pow(g, 2, p) != 1 and pow(g, q, p) != 1:
-                return p, g
+                if pow(g, 2, p) != 1 and pow(g, q, p) != 1:
+                    return p, g
 
 
 def main():
